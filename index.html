@@ -17,20 +17,20 @@
 <body>
 
   <!-- Sign-up form start -->
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <form id="newsletterForm" class="newsletter-form" novalidate>
+        <label for="email">Email address:</label>
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+        <div id="emailError" class="error-message"></div>
+        <div id="successMessage" class="success-message"></div>
+    </form>
+  </div>
 
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
+  <script src="script.js"></script>
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
