@@ -12,8 +12,12 @@
   </head>
   <body>
     <main>
+      <h1 class="hidden">Newsletter Sign-up Form</h1>
       <!-- Sign-up form start -->
-      <div class="container">
+      <div class="section sign-up-section">
+
+
+
         <div class="left-container">
           <h2>Stay updated!</h2>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -25,23 +29,22 @@
           
           <form id="newsletterForm" class="newsletter-form" novalidate>
             <label for="email">Email address</label>
-            <div class="input-group">
-                <input type="email" id="email" name="email" placeholder="email@company.com" required>
-                <button type="submit">Subscribe to monthly newsletter</button>
-            </div>
+            <input type="email" id="email" name="email" placeholder="email@company.com" required>
+            <span class="error-message">Valid email required</span>
+            <button class="submit" type="submit">Subscribe to monthly newsletter</button>
+           
             <div id="emailError" class="error-message"></div>
             <div id="successMessage" class="success-message"></div>
           </form>
         </div>
-        <div class="right-container">
-            <img src="assets\images\illustration-sign-up-desktop.svg" alt="Newsletter Image">
-        </div>
+
+          <img class="right-container" src="assets\images\illustration-sign-up-desktop.svg" alt="Newsletter Image">
       </div>
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
 
-      <div class="card success-card hidden">
+      <div class="section success-msg hidden">
         <img src="assets/images/icon-success.svg" alt="" />
         <h2>Thanks for subscribing!</h2>
         <p>
@@ -49,14 +52,14 @@
           <span class="submitted-email">ash@loremcompany.com</span>. Please open
           it and click the button inside to confirm your subscription.
         </p>
-        <button class="btn dismiss-btn">Dismiss message</button>
+        <button class="dismiss">Dismiss message</button>
       </div>
 
       <!-- Success message end -->
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="flex-center">
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="https://www.frontendmentor.io/profile/delrio21" target="_blank">delrio21</a>
